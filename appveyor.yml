@@ -11,10 +11,9 @@ install:
 - npm install hexo-cli -g
 
 build_script:
+- hexo clean
 - hexo generate
 
-# Don't actually build.
-build: off
 
 artifacts:
 - path: public
