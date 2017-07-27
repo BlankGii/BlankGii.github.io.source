@@ -1,17 +1,29 @@
 clone_depth: 5
 
 environment:
+  nodejs_version: "6"
   access_token:
     secure: gY3IaHDjHaLynR0XKvv6+Xtn/KcXvZVOLHRl7SgmMz9HtRdvbSbxnyNW+bmSKFso
 
 install:
-- node --version
-- npm --version
+- ps: Install-Product node $env:nodejs_version
 - npm install
 - npm install hexo-cli -g
 
 build_script:
 - hexo generate
+
+# Don't actually build.
+build: off
+
+# Post-install test scripts.
+test_script:
+  # Output useful info for debugging.
+  - node --version
+  - npm --version
+  # run tests
+  - npm test
+
 
 artifacts:
 - path: public
