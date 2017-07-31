@@ -56,7 +56,6 @@ index_generator:
 default_category: uncategorized
 category_map:
 tag_map:
-
 # Archives 默认值为2，这里都修改为1，相应页面就只会列出标题，而非全文
 archive: 1
 category: 1
