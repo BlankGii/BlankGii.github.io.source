@@ -3,15 +3,36 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: title	
+title: 7	
 subtitle:  subtitle
 author: Blankii
 language: 
-timezone:  2017-8-1 10:25:13
+timezone: 
+SEOTitle: Blankii's blog 
 
-favicon: "tongmengzuopjilun.jpg"
-# custom end
+# img CDN path
+cdn-url: http://otoqommvz.bkt.clouddn.com/
 
+# Sidebar settings
+sidebar: true
+sidebar-about-description: Here We Are Again
+sidebar-avatar: xiaoqingxbanq.jpg
+
+favicon: tongmengzuopjilun.jpg
+
+# post default images
+post-default-img: xiaoqingxbanq.jpg
+post-default-img-mobile: xiaoqingxbanq.jpg
+
+header-img: xiaoqingxbanq.jpg
+
+#来必力评论系统
+use_livere: true
+livere_uid: MTAyMC8yOTg4Mi82NDQ3
+
+#sns
+github_username:  blankgii
+##########################################################################
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://haojen.github.io
@@ -23,13 +44,12 @@ permalink_defaults:
 # RSS:
 weibo_username: 
 zhihu_username: 
-github_username: 
 twitter_username: 
 facebook_username:  
 linkedin_username:  
 
 # Build settings
-anchorjs: false          # if you want to customize anchor. check out line:181 of `post.html`
+anchorjs: false      # if you want to customize anchor. check out line:181 of `post.html`
 
 # Disqus settings 
 disqus_username: 
@@ -37,27 +57,16 @@ disqus_username:
 # Duoshuo settings
 duoshuo_username:  # 你的多说帐号
 # Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: false                     # set to false if you want to use Comment without Sharing
-
-# Use livere
-use_livere: "MTAyMC8yOTg4Mi82NDQ3"
+duoshuo_share: false     # set to false if you want to use Comment without Sharing
 
 # Analytics settings
 # Baidu Analytics
 ba_track_id:
 # Google Analytics
-ga_track_id:             # Format: UA-xxxxxx-xx
+ga_track_id:     # Format: UA-xxxxxx-xx
 ga_domain:
 
-# Sidebar settings
-sidebar-about-description: 大家好
-sidebar-avatar:  "tongmengzuopjilun.jpg"
-
-# custom Site settings
-# more detail check out docs
-SEOTitle: Blankii's blog 
-header-img: //o7bkkhiex.bkt.clouddn.com/lion-blur-bg.jpg
-email: blankii@qq.com
+email: blankii@qq.com2017/8/1 星期二
 description: "马浩珍在 Github 上的个人博客"
 keyword: # seo key words
 
@@ -126,26 +135,12 @@ markdown:
 ## Themes: https://hexo.io/themes/
 theme: anisina
 
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: 
-  repo: 
-  branch: 
-
-
-# img CDN path
-cdn-url:  "http://otoqommvz.bkt.clouddn.com/"
-
 # Qiniu imageView2 API
 # More info http://developer.qiniu.com/code/v6/api/kodo-api/image/imageview2.html
 clip-content: "?imageView2/1/w/1400/h/400/interlace/1/q/90"
 clip-avatar: "?imageView2/2/w/300/h/300/interlace/1/q/90"
+clip-post: "?" # you can custom post width and height
 clip-home-post-bg: "?imageView2/1/w/800/h/300/interlace/1/q/70"
-
-# post default images
-post-default-img: http://otoqommvz.bkt.clouddn.com/image/bg/blog-bg-black-run.jpg
-post-default-img-mobile: http://otoqommvz.bkt.clouddn.com/image/bg/blog-bg-black-run.jpg
 
 # search api , set your custom key
 swiftype_key: 
@@ -155,3 +150,9 @@ swiftype_key:
 archive:
     title: archives
     description: 可以根据归档日期检索所有文件
+
+#123
+deploy:
+  type: git
+  repository: git@github.com:BlankGii/BlankGii.github.io.git
+  branch: master
