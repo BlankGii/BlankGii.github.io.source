@@ -3,19 +3,70 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Here We Are Again
-subtitle:
-description:
+title: title	
+subtitle:  subtitle
 author: Blankii
-language:
-timezone:
+language: 
+timezone:  2017-8-1 10:25:13
+
+favicon: "tongmengzuopjilun.jpg"
+# custom end
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://haojen.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
+
+# SNS settings
+# RSS:
+weibo_username: 
+zhihu_username: 
+github_username: 
+twitter_username: 
+facebook_username:  
+linkedin_username:  
+
+# Build settings
+anchorjs: false          # if you want to customize anchor. check out line:181 of `post.html`
+
+# Disqus settings 
+disqus_username: 
+
+# Duoshuo settings
+duoshuo_username:  # 你的多说帐号
+# Share component is depend on Comment so we can NOT use share only.
+duoshuo_share: false                     # set to false if you want to use Comment without Sharing
+
+# Use livere
+use_livere: "MTAyMC8yOTg4Mi82NDQ3"
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id:
+# Google Analytics
+ga_track_id:             # Format: UA-xxxxxx-xx
+ga_domain:
+
+# Sidebar settings
+sidebar-about-description: 大家好
+sidebar-avatar:  "tongmengzuopjilun.jpg"
+
+# custom Site settings
+# more detail check out docs
+SEOTitle: Blankii's blog 
+header-img: //o7bkkhiex.bkt.clouddn.com/lion-blur-bg.jpg
+email: blankii@qq.com
+description: "马浩珍在 Github 上的个人博客"
+keyword: # seo key words
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+# friends
+friends:  # 友链
 
 # Directory
 source_dir: source
@@ -34,39 +85,25 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: true
+  line_number: false
   auto_detect: false
   tab_replace:
-  
-# Home page setting
-# path: Root path for your blogs index page. (default = '')
-# per_page: Posts displayed per page. (0 = disable pagination)
-# order_by: Posts order. (Order by date descending by default)
-index_generator:
-  path: ''
-  per_page: 10
-  order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
 tag_map:
-# Archives 默认值为2，这里都修改为1，相应页面就只会列出标题，而非全文
-archive: 1
-category: 1
-tag: 1
-
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: MM-DD-YYYY
+date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
 # Pagination
@@ -76,15 +113,45 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: claudia
 
-#头像URl
-#avatar: http://otoqommvz.bkt.clouddn.com/tongmengzuopjilun.jpg
+markdown:
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+    - markdown-it-emoji
+
+## Themes: https://hexo.io/themes/
+theme: anisina
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: git@github.com:BlankGii/BlankGii.github.io.git
-  branch: master
+  type: 
+  repo: 
+  branch: 
+
+
+# img CDN path
+cdn-url:  "http://otoqommvz.bkt.clouddn.com/"
+
+# Qiniu imageView2 API
+# More info http://developer.qiniu.com/code/v6/api/kodo-api/image/imageview2.html
+clip-content: "?imageView2/1/w/1400/h/400/interlace/1/q/90"
+clip-avatar: "?imageView2/2/w/300/h/300/interlace/1/q/90"
+clip-home-post-bg: "?imageView2/1/w/800/h/300/interlace/1/q/70"
+
+# post default images
+post-default-img: http://otoqommvz.bkt.clouddn.com/image/bg/blog-bg-black-run.jpg
+post-default-img-mobile: http://otoqommvz.bkt.clouddn.com/image/bg/blog-bg-black-run.jpg
+
+# search api , set your custom key
+swiftype_key: 
+
+
+# archive page title 
+archive:
+    title: archives
+    description: 可以根据归档日期检索所有文件

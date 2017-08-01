@@ -30,10 +30,10 @@ excerpt_link: Read More
 fancybox: true
 
 # display widgets at the bottom of index pages (pagination == 2)
-index_widgets:
- - category
- - tagcloud
- - archive
+#index_widgets:
+ #- category
+ #- tagcloud
+ #- archive
 
 # widget behavior
 archive_type: 'monthly'
@@ -42,7 +42,7 @@ show_count: false
 # 评论系统
 # 不要用别人的 uid, 自己去注册一个吧
 use_livere: true
-livere_uid: 
+livere_uid: 'MTAyMC8yOTg4Mi82NDQ3'
 
 use_disqus: false
 disqus_url: https://haojen.disqus.com/embed.js
