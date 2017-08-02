@@ -2,10 +2,9 @@
 
 title: 使用markdown语法练习
 tags:
-  - 开发工具
-header-img: weijuchiluntu.jpg
+  - Test
+header-img: image/use/bg.jpg
 cdn: 'header-on'
-
 ---
 
 

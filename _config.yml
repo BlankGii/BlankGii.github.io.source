@@ -3,8 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 8	
-subtitle:  subtitle
+title: Blankii
 author: Blankii
 language: 
 timezone: 
@@ -14,24 +13,30 @@ SEOTitle: Blankii's blog
 cdn-url: http://otoqommvz.bkt.clouddn.com/
 
 # Sidebar settings
-sidebar: true
 sidebar-about-description: Here We Are Again
-sidebar-avatar: xiaoqingxbanq.jpg
+sidebar-avatar: http://otoqommvz.bkt.clouddn.com/image/use/avatar.jpg
 
-favicon: tongmengzuopjilun.jpg
+favicon: http://otoqommvz.bkt.clouddn.com/image/use/avatar.jpg
 
 # post default images
-post-default-img: xiaoqingxbanq.jpg
-post-default-img-mobile: xiaoqingxbanq.jpg
+post-default-img: http://otoqommvz.bkt.clouddn.com/image/backup/bg1.jpg
+post-default-img-mobile: http://otoqommvz.bkt.clouddn.com/image/backup/bg1.jpg
 
-header-img: xiaoqingxbanq.jpg
+#副页面title 背景
+header-img: http://otoqommvz.bkt.clouddn.com/image/backup/bg1.jpg
+subtitle:  Here We Go
 
 #来必力评论系统
 use_livere: true
 livere_uid: MTAyMC8yOTg4Mi82NDQ3
 
-#sns
+#github 链接
 github_username:  blankgii
+
+# archive page title 
+archive:
+    title: archives
+    description: 可以根据归档日期检索所有文件
 ##########################################################################
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -66,13 +71,14 @@ ba_track_id:
 ga_track_id:     # Format: UA-xxxxxx-xx
 ga_domain:
 
+#ABOUT 界面
 email: blankii@qq.com2017/8/1 星期二
 description: "马浩珍在 Github 上的个人博客"
 keyword: # seo key words
 
 # Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+featured-tags: true               # whether or not using Feature-Tags
+featured-condition-size: 1     # A tag will be featured if the size of it is more than this condition value
 
 # friends
 friends:  # 友链
@@ -106,7 +112,7 @@ highlight:
 # Category & Tag
 default_category: uncategorized
 category_map:
-tag_map:
+tag_map: 
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -144,12 +150,6 @@ clip-home-post-bg: "?imageView2/1/w/800/h/300/interlace/1/q/70"
 
 # search api , set your custom key
 swiftype_key: 
-
-
-# archive page title 
-archive:
-    title: archives
-    description: 可以根据归档日期检索所有文件
 
 #123
 deploy:
